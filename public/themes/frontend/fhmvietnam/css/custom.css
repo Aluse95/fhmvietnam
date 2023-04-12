@@ -1,0 +1,22 @@
+#myBtn {
+  display: none;
+  z-index: 600;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 50px;
+  right: 43px;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  top: auto;
+  left: auto;
+  right: 30px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+#myBtn:hover {
+  background-color: #ffad02;
+}

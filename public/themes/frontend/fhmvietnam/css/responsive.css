@@ -1,0 +1,148 @@
+@import "./homepage-mobile.css";
+
+/* START MOBILE */
+@media (max-width: 576px) {
+  .button .text {
+    font-size: 18px;
+  }
+
+  .button.button-sm .text {
+    font-size: 14px;
+  }
+  /* START HEADER */
+  #header .logo {
+    width: 80px;
+    height: auto;
+  }
+
+  #header .header-container .logo a {
+    display: flex;
+    align-items: center;
+  }
+
+  #header .header-container .logo a img {
+    height: 60%;
+  }
+
+  /* END HEADER */
+
+  /* START FOOTER */
+  #footer {
+    padding: 100px 0 50px;
+  }
+
+  #footer .footer-contact {
+    margin: 20px 0 60px;
+  }
+
+  #footer .footer-link-list li a,
+  #footer .footer-contact ul li a {
+    font-size: 16px;
+  }
+  /* END FOOTER */
+}
+/* END MOBILE */
+
+/* START TABLET */
+@media (max-width: 769px) {
+  /* START HEADER */
+  #header .menu-desktop {
+    display: none;
+  }
+
+  #header .menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gray);
+    transform: translateX(100%);
+    transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+    display: block;
+  }
+
+  #header .menu-mobile .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    padding: 30px;
+  }
+
+  #header .menu-mobile .menu-list {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  #header .menu-mobile .menu-item a {
+    width: fit-content;
+  }
+
+  #header .menu-mobile .menu-item a,
+  #header .menu-mobile .button a {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #header .menu .button a:last-child {
+    background-color: transparent;
+  }
+
+  #header .menu-mobile .button {
+    height: 60px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+    align-items: start;
+    width: 100%;
+  }
+
+  #header .menu-mobile .menu .button a {
+    padding: 0;
+    color: #000;
+    gap: 15px;
+  }
+
+  #header .header-container .toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    z-index: 10;
+    top: 25px;
+    right: 30px;
+    transition: all ease 0.2s;
+    transition-delay: 0.9s;
+    width: 50px;
+    height: 50px;
+  }
+
+  #header .header-container .toggle-button .line {
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+    transition-delay: 0.2s;
+  }
+
+  #header .header-container .toggle-button.close {
+    gap: 0;
+    transition-delay: 0s;
+  }
+
+  #header .header-container .toggle-button.close .line:first-child {
+    transform: rotate(45deg);
+  }
+
+  #header .header-container .toggle-button.close .line:last-child {
+    transform: rotate(-45deg);
+  }
+  /* END HEADER */
+}
+/* END TABLET */
